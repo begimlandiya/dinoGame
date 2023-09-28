@@ -1,0 +1,55 @@
+.game {
+  width: 800px;
+  height: 300px;
+  border-bottom: 1px solid black;
+  margin: auto;
+}
+
+#dino {
+  width: 55px;
+  height: 55px;
+  background-image: url(img/Chromium_T-Rex-error-offline.svg.png);
+  background-size: 50px 50px;
+  position: relative;
+  top: 250px;
+}
+
+#cactus {
+  width: 20px;
+  height: 40px;
+  background-image: url(img/3050983.png);
+  background-size: 20px 40px;
+  position: relative;
+  top: 205px;
+  left: 780px;
+  animation: cactusMov 1s infinite linear;
+}
+@keyframes cactusMov {
+  0% {
+    left: 780px;
+  }
+  100% {
+    left: -20px;
+  }
+}
+
+.jump {
+  animation: jump 0.3s linear;
+}
+@keyframes jump {
+  0% {
+    top: 205px;
+  }
+  30% {
+    top: 160px;
+  }
+  50% {
+    top: 100px;
+  }
+  80% {
+    top: 160px;
+  }
+  100% {
+    top: 205px;
+  }
+}
